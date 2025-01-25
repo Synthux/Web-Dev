@@ -1,0 +1,11 @@
+Which type of elements takes up the full width available?
+    a) Block elements
+    b) Inline elements
+    > a
+
+Name one HTML block element.
+    div
+
+Name one HTML inline element.
+    img
+

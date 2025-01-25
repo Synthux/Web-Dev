@@ -1,0 +1,58 @@
+What is a correct syntax for an HTML hyperlink?
+
+    a) <a href='/home.htm'>Visit W3Schools.com!</a>
+    b) <link href='/home.htm'>Visit W3Schools.com!</link>
+    c) <alink href='/home.htm'>Visit W3Schools.com!</alink>
+    > a
+
+
+Use the correct HTML to make the text below into a link to "default.html".
+    <a href="default.html">Visit our HTML tutorial.</a>
+
+
+Use the correct HTML attribute to make the link open in a new window.
+    <a href="html_images.asp" target="_blank">HTML Images</a>
+
+
+Use the correct HTML to make the image become a link to "default.html".
+    <a href="default.html">
+        <img src="smiley.gif">
+    </a>
+
+
+Add a "tooltip" to the link.
+The "tooltip" should say "Home".
+    <a href="default.html" title="Home">Back to Home</a>
+
+
+True or False. By default all hyperlinks are underlined.
+    True
+
+
+Use CSS to remove the underline from the link.
+    <a href="html_images.asp" style="text-decoration: none;">HTML Images</a>
+
+
+What is a correct syntax for making a link red when you mouse over it?
+    a) <style>a:over {color:red}</style>
+    b) <style>a:hover {color:red}</style>
+    c) <style> a:mouseover {color:red}</style>
+    > b
+
+
+What HTML attribute is used to create a bookmark?
+    a) The bookmark attribute
+    b) The anchor attribute
+    c) The id attribute
+    > c
+
+
+Add a link to a bookmark, on the same page, with the id="mytext".
+    <a href="#mytext">Jump to new text</a>
+
+
+What is a correct syntax for linking to a bookmark named C4 on another page?
+    a) <a href='demo.html' jump='C4'>Jump to Chapter 4</a>
+    b) <a href='demo.html' bookmark='C4'>Jump to Chapter 4</a>
+    c) <a href='demo.html#C4'>Jump to Chapter 4</a>
+    > c

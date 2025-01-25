@@ -1,0 +1,35 @@
+What is a correct HTML markup for the document type declaration?
+<!DOCTYPE html>
+
+Place the start- and end-tags in the correct positions.
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+    <h1>My First Heading</h1>
+
+    <p>My first paragraph.</p>
+
+    </body>
+    </html>
+
+HTML elements are surrounded by a specific type of brackets, which one?
+    <p>This is a paragraph.</p>
+
+Fill in the missing code to complete the markup of the HTML hyperlink.
+    <a href="https://www.w3schools.com">This is a link</a>
+
+True or False. Empty elements must have a close tag.
+    False (since they have no content)
+
+Insert the correct end tag for the HTML heading.
+    <h1>This is a heading</h1>
+
+Insert the correct end tags in this HTML document:
+    <html>
+        <body>
+        <h4>This is a heading</h4>
+
+        <p>This is a paragraph.</p>
+        </body>
+    </html>
