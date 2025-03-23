@@ -1,0 +1,21 @@
+Spot the Bug
+Consider each of the following chunks of HTML. Which are formatted incorrectly?
+That is, which ones look wrong and need their HTML corrected?
+
+Question 1:
+    <p>a paragraph<p>
+    > Incorrect
+
+Question 2:
+    <p><em>words, words, wrods.</em></p>
+    > Correct
+
+Question 3:
+    <span...middle of the sentence...</span>
+    > Correct
+
+Question 4:
+    <p><em>words, words, wrods.</p></em>
+    > Incorrect
+
+

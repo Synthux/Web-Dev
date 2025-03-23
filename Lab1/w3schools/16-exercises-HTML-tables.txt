@@ -1,0 +1,173 @@
+////// TABLES ///////////////////////////////////////////////////////////////////////////
+What is the correct tag name for a table-cell in HTML?
+    a) <tc>
+    b) <td>
+    c) <tr>
+
+
+What is the correct tag name for a table-row in HTML?
+    a) <tr>
+    b) <td>
+    c) <th>
+
+Add a table row at the end of the table, with two table cells.
+The two table cells should have the value "Eve Jackson" and "94".
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill Smith</td>
+            <td>50</td>
+        </tr>
+
+        <!-- new cells -->
+        <tr>
+            <td>Eve Jackson</td>
+            <td>94</td>
+        </tr>
+        <!-- new cells -->
+    </table>
+
+////// BORDERS //////////////////////////////////////////////////////////////////////////
+What is the correct CSS property for styling the border of a table?
+    a) table-border
+    b) table-style
+    c) border
+    > c
+
+What is the correct CSS code to turn this table: (table with double borders)
+into this table: (table with single borders)
+    a) border-span: single;
+    b) border-collapse: collapse;
+    c) border-implode: implode;
+    > b
+
+
+Use the correct CSS border values to create a solid black 3 pixels border on a table element.
+    table, th, td {
+        border: 3px solid black;
+    }
+
+////// TABLE SIZES //////////////////////////////////////////////////////////////////////
+What is the correct CSS property for styling the width of a table?
+    a) size
+    b) table-size
+    c) width
+    > c
+
+
+True or False. To specify a table width, you are only allowed to use percentages as a value.
+    False
+
+
+Use CSS styles to make the table 300 pixels wide.
+    <table style="width:300px;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+////// TABLE HEADERS ////////////////////////////////////////////////////////////////////
+What is the correct tag name for a table-header in HTML?
+    a) <table-header>
+    b) <td>
+    c) <th>
+    > c
+
+
+Add a table row with two table headers.
+The two table headers should have the value "Name" and "Age".
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill Smith</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+Add a table caption that says "Names".
+    <table>
+    <caption>Names</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+////// PADDING & SPACING ////////////////////////////////////////////////////////////////
+What is the correct CSS property for styling the padding inside table cells?
+    a) padding
+    b) table-padding
+    c) cell-padding
+    > a
+
+What is the correct CSS property for styling the space between the table cells?
+    a) spacing
+    b) table-spacing
+    c) border-spacing
+    > c
+
+Use the correct CSS property to add 15 pixels of space between the cell border and cell content.
+The result should look like this:
+    .table td  {
+        padding: 15px;
+    }
+
+
+What is the correct HTML attribute for specifying how many rows a cell should span?
+    a) span
+    b) rowspan
+    c) spanning
+    > b
+
+Use the correct HTML attribute to make the second TH element span two rows.
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Jill Smith</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-77854</td>
+        </tr>
+        <tr>
+            <td>555-77854</td>
+        </tr>
+    </table>
+
+
+Use the correct HTML attribute to make the first TH element span two columns.
+    <table>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    </table>

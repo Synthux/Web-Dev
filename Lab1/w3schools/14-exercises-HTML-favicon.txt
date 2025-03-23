@@ -1,0 +1,14 @@
+In which HTML element is the Favicon defined?
+    a) The <img> element
+    b) The <body> element
+    c) The <link> element
+    d) The <style> element
+    > c
+
+
+Which HTML tag is used to handle the favicon (the little image to the left in the browser tab):
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+
+True or False. Favicons must have the .ico file extension.
+    False

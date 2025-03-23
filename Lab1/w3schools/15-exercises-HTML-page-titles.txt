@@ -1,0 +1,14 @@
+In which HTML element is the page title defined?
+    a) The <title> element
+    b) The <body> element
+    c) The <link> element
+    d) The <page> element
+    > a
+
+
+What is the page's title? (https://www.w3schools.com/html/homepage)
+    Welcome
+
+
+True or False. A page should only have one title element.
+    True

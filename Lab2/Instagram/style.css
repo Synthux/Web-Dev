@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.container {
+    font-family: Arial;
+}
+.content {
+    width: 935px;
+    margin: 32px auto 46px;
+}
+.content > div {
+    display: inline-block;
+}
+/* ---------- PHONES -------------------------------------------------------------------------------------------------*/
+.phones-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 32px;
+    vertical-align: top;
+}
+.home-phone > img {
+    width: 380px;
+    z-index: 1;
+}
+.screenshots-slider > img {
+    width: 205px;
+    position: absolute;
+    top: 20px;
+    left: 127px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.screenshots-slider > img.active {
+    opacity: 1;
+}
+
+/* ---------- AUTH ---------------------------------------------------------------------------------------------------*/
+
+.auth-container {
+    width: 350px;
+    margin-left: 100px;
+}
+.login-card {
+    border-radius: 1px;
+    border: 1px solid #dedcdc;
+    margin-bottom: 20px;
+}
+.instagram-word-container {
+    text-align: center;
+}
+.instagram-word-container > img {
+    width: 175px;
+}
+.input-container > input {
+    display: block;
+    width: 260px;
+    margin: 0 auto 10px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #dedcdc;
+}
+.login-button {
+    display: block;
+    width: 260px;
+    margin: 0 auto 10px;
+    border-radius: 4px;
+    padding: 10px;
+    background: #43addb;
+    color: #ffffff;
+    font-weight: 600;
+}
+.forget-password-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.forget-password-container > a {
+    color: #3481a2;
+}
+
+.register-card {
+    border-radius: 1px;
+    border: 1px solid #dedcdc;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    text-align: center;
+}
+.register-card > a {
+    color: #3481a2;
+}
+.download-app {
+    text-align: center;
+}
+.download-app > span {
+    display: block;
+    padding: 10px;
+}
+.download-app > a > img {
+    width: 136px;
+    margin: 5px;
+}
+/* ---------- FOOTER -------------------------------------------------------------------------------------------------*/
+footer {
+    width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+.first-line > li {
+    display: inline-block;
+
+    margin: 2px 2px 14px;
+}
+
+.select-language > option {
+    display: inline-block;
+    margin: 2px;
+}
