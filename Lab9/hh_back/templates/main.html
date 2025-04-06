@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Navigation</title>
+  </head>
+  <body>
+    <h1>Welcome to the HH-HeadHunter API</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="/api/companies/">List of Companies</a>
+        </li>
+        <li>
+          <label for="company-id">Enter Company ID for Details:</label>
+          <input type="text" id="company-id" placeholder="Company ID" />
+          <button onclick="redirectToComp()">Go</button>
+        </li>
+        <li>
+          <label for="company-id-vac">Enter Company ID for Vacancies:</label>
+          <input type="text" id="company-id-vac" placeholder="Company ID" />
+          <button onclick="redirectToCompVac()">Go</button>
+        </li>
+        <li>
+          <a href="/api/vacancies/">List of Vacancies</a>
+        </li>
+        <li>
+          <label for="vacancy-id">Enter Vacancy ID for Details:</label>
+          <input type="text" id="vacancy-id" placeholder="Vacancy ID" />
+          <button onclick="redirectToVac()">Go</button>
+        </li>
+        <li>
+          <a href="/api/vacancies/top_ten/">Top 10 Vacancies</a>
+        </li>
+        <li>
+          <a href="/api/positions/">List of Positions</a>
+        </li>
+        <li>
+          <label for="position-id">Enter Position ID for Details:</label>
+          <input type="text" id="position-id" placeholder="Position ID" />
+          <button onclick="redirectToPos()">Go</button>
+        </li>
+        <li>
+          <a href="/api/add/">Add New Company, Vacancy, and Position</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      function redirectToComp() {
+        const id = document.getElementById("company-id").value;
+        if (id) {
+          window.location.href = "/api/companies/" + id + "/";
+        }
+      }
+
+      function redirectToCompVac() {
+        const id = document.getElementById("company-id-vac").value;
+        if (id) {
+          window.location.href = "/api/companies/" + id + "/vacancies";
+        }
+      }
+
+      function redirectToVac() {
+        const id = document.getElementById("vacancy-id").value;
+        if (id) {
+          window.location.href = "/api/vacancies/" + id + "/";
+        }
+      }
+
+      function redirectToPos() {
+        const id = document.getElementById("position-id").value;
+        if (id) {
+          window.location.href = "/api/positions/" + id + "/";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Companies and Vacancies</title>
+  </head>
+  <body>
+    <h1>Add New Entries</h1>
+
+    <h2>Add a Company</h2>
+    <form method="post">
+      {% csrf_token %} {{ comp_form.as_p }}
+      <button type="submit" name="submit_company">Add Company</button>
+    </form>
+
+    <h2>Add a Position</h2>
+    <form method="post">
+      {% csrf_token %} {{ pos_form.as_p }}
+      <button type="submit" name="submit_position">Add Position</button>
+    </form>
+
+    <h2>Add a Vacancy</h2>
+    <form method="post">
+      {% csrf_token %} {{ vac_form.as_p }}
+      <button type="submit" name="submit_vacancy">Add Vacancy</button>
+    </form>
+
+    <p>
+      <a href="/">Return to Main Page</a>
+    </p>
+  </body>
+</html>
