@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Navigation</title>
+  </head>
+  <body>
+    <h1>Welcome to the HH-Back</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="/api/add/">Add New Company and Vacancy</a>
+        </li>
+        <li>
+          <a href="/api/cbv/companies/">List of Companies</a>
+        </li>
+        <li>
+          <label for="company-id">Enter Company ID for Details:</label>
+          <input type="text" id="company-id" placeholder="Company ID" />
+          <button onclick="redirectToCompany()">Go</button>
+        </li>
+        <li>
+          <label for="company-id-vac">Enter Company ID for Vacancies:</label>
+          <input type="text" id="company-id-vac" placeholder="Company ID" />
+          <button onclick="redirectToCompanyVacancies()">Go</button>
+        </li>
+        <li>
+          <a href="/api/cbv/vacancies/">List of Vacancies</a>
+        </li>
+        <li>
+          <label for="vacancy-id">Enter Vacancy ID for Details:</label>
+          <input type="text" id="vacancy-id" placeholder="Vacancy ID" />
+          <button onclick="redirectToVacancy()">Go</button>
+        </li>
+        <li>
+          <a href="/api/cbv/vacancies/top_ten/">Top Ten Vacancies</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      function redirectToCompany() {
+        const id = document.getElementById("company-id").value;
+        if (id) {
+          window.location.href = "/api/cbv/companies/" + id + "/";
+        }
+      }
+
+      function redirectToCompanyVacancies() {
+        const id = document.getElementById("company-id-vac").value;
+        if (id) {
+          window.location.href = "/api/cbv/companies/" + id + "/vacancies/";
+        }
+      }
+
+      function redirectToVacancy() {
+        const id = document.getElementById("vacancy-id").value;
+        if (id) {
+          window.location.href = "/api/cbv/vacancies/" + id + "/";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<div>
+  <h2>Companies</h2>
+  <ul>
+    <li *ngFor="let company of companies">
+      <a href="#" (click)="showVacancies(company.id); $event.preventDefault()">
+        {{ company.name }}
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedCompanyId !== null">
+  <h3>Vacancies for Company ID: {{ selectedCompanyId }}</h3>
+  <ul>
+    <li *ngFor="let vacancy of vacancies">
+      {{ vacancy.name }} - ${{ vacancy.salary }}
+    </li>
+  </ul>
+</div>
